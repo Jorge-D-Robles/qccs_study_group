@@ -32,7 +32,7 @@ int main()
 
 if (op == "+")
 {
-    cout << "Answer = " << (num1 + num2) << endl;
+    cout << add(num1, num2) << endl;
 }
 else if (op == "-")
 {
@@ -46,10 +46,10 @@ else if (op == "/")
 {
     cout << "Answer = " << (num1 / num2) << endl;
 }
-else if (op == "%")
-{
-    cout << "Answer = " << (num1 % num2) << endl;
-}
+// else if (op == "%")
+// {
+//     cout << "Answer = " << (num1 % num2) << endl;
+// }
 else cout << "Please input a correct operator.\n";
 
 return 0;
@@ -67,7 +67,8 @@ return 0;
 double add(double num1, double num2)
 {
     double ans;
-    return 0;
+    ans = num1 + num2;
+    return ans;
 }
 double sub(double num1, double num2)
 {

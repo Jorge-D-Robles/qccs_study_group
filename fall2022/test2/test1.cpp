@@ -23,4 +23,4 @@ int numNines(int y);
 void deleteY(string &s);
 void listPrimes(int x, int y);
 char thirdChar(string s);
-int mystery(char x, int y);
+void mystery(char x, int y);

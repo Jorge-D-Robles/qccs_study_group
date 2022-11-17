@@ -14,6 +14,8 @@
 using namespace std;
 int main()
 {
+    srand(time(0));
+    
     int count = 0;
     double sum = 0;
     double avg = 0;
@@ -30,7 +32,7 @@ int main()
     }
     cout << endl;
     avg = sum/count;
-    
+
     cout << "Count of odd numbers is " << count << endl;
     cout << "Average of odd numbers is " << avg << endl;
     

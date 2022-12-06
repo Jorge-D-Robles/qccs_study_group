@@ -6,12 +6,14 @@ int removeFirst(int x)
         return 0;
     return 10 * removeFirst(x / 10) + x % 10;
 }
+
 int middle(int x)
 {
     if (x < 100)
         return x;
     return middle(removeFirst(x) / 10);
 }
+
 int main()
 {
     cout << middle(19683) << endl; // prints 6
